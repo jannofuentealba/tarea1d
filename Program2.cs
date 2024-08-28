@@ -30,10 +30,6 @@ public class EncriptarMensaje : mensajeDecorador
         return mensajedeco.getMensaje() + " ENCRIPTADO";
     }
 }
-
-
-
-
 public class ComprimirMensaje : mensajeDecorador
 {
     public ComprimirMensaje(Imensaje mensaje) : base(mensaje) { }
@@ -42,9 +38,6 @@ public class ComprimirMensaje : mensajeDecorador
         return mensajedeco.getMensaje() + " COMPRIMIDO";
     }
 }
-
-
-
 public class FirmarMensaje : mensajeDecorador
 {
     public FirmarMensaje(Imensaje mensaje) : base(mensaje) { }
@@ -53,11 +46,6 @@ public class FirmarMensaje : mensajeDecorador
         return mensajedeco.getMensaje() + " FIRMADO";
     }
 }
-
-
-
-
-
 public class Program2
 {
     public static void Main(string[] agrs)
@@ -75,8 +63,5 @@ public class Program2
 
         mimensaje2 = new FirmarMensaje(mimensaje2);
         Console.WriteLine(mimensaje2.getMensaje());
-
-
     }
-
 }
